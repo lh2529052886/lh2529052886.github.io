@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Blog 管理</title>
+	<link rel="stylesheet" href="css/admin_index.css">
+	<script type="text/javascript" src="../utf8-php/ueditor.config.js"></script>
+	<script type="text/javascript" src="../utf8-php/ueditor.all.min.js"></script>
+	<script type="text/javascript" src="../utf8-php/lang/zh-cn/zh-cn.js"></script>
+</head>
+<body>
+<div id="lis">
+<h1 class="log">MyBlog管理</h1>
+<input type="text" class="search">
+<div class="blog-lis">
+	
+</div>
+</div>
+<div id="contents">
+	<textarea name="contenta" id="content"></textarea>
+	<input type="button" value="提交"><input type="button" value="重置">
+</div>
+</body>
+</html>
+<script type="text/javascript">
+	UE.getEditor("content",{initialFrameWidth:window.innerWidth-lis.offsetWidth-5,initialFrameHeight:500});
+</script>
